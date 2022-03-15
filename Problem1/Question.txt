@@ -5,9 +5,9 @@ Gave both recursive and iterative approach
 Recursive approach
 solution in preorderrec.cpp file
 Time Complexity is- O(n)
-Space Complexity is -O(n) Reason-"Recursive call stack space"
+Space Complexity is- O(n) Reason-"Recursive call stack space"
 while giving the answer tell that 
-**Note:The space Complexity will be the hight of tree which can be O(n) in worst case when the tree is a skew tree
+**Note:The space Complexity will be the hight-O(h) of tree which can be O(n) in worst case when the tree is a skew tree
 
 
 Iterative Approach
@@ -19,3 +19,9 @@ So the algo works as follow
 3->when you procees the root push it's right subtree's root onto the stack if it exisit
 4->then check wether it has a left subtree and push it's root 
 5->then the node which we removed we push it's content into the vector in which we are storing the result of preorder traversal
+
+Recursive Approach
+It is quite direct
+1->First Process the root
+2->Then make a recursive call to the left subtree
+3->Then make a recursive call to the right subtree

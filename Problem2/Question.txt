@@ -1,0 +1,27 @@
+Provided the solution of Inorder Traversal of a BinaryTree
+Question link:https://leetcode.com/problems/binary-tree-inorder-traversal
+Gave both recursive and iterative approach
+
+Recursive approach
+solution in preorderrec.cpp file
+Time Complexity is- O(n)
+Space Complexity is- O(n) Reason-"Recursive call stack space"
+while giving the answer tell that 
+**Note:The space Complexity will be the hight-O(h) of tree which can be O(n) in worst case when the tree is a skew tree
+
+
+Iterative Approach
+Using Stack data structure which is LIFO data structure
+Idea is that as we know is case of Preorder traversal we travel the tree in root,left,right Manner
+So the algo works as follow
+We have to make a stack and a temp variable
+1->make a check if root is NULL then return 
+2->then make the root point to temp
+3->then first push all the node in the stack
+4->then once you exhaust the left subtree you pop the node from the top of the stack
+5->then push the content of the root node into the traversal array and then move then make the temp to point to the right of that temp
+
+Recursive Approach
+1->First make a call to the left subtree
+2->The procees root
+3->Then make a call to the right subtree
