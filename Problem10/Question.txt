@@ -1,0 +1,10 @@
+Provided the solution to check given Trees are identical or not 
+Question link:https://leetcode.com/problems/same-tree/submissions
+Approach:
+It is straight forward you can use any tree traversal technique
+1->Used Preorder Traversal
+2->If both or the node is null return true
+3->If one of the is null or the value of the node doesn't match return False
+4->Check the left subtree
+5->Check the right subtree
+6->return and of both left and right subtree
